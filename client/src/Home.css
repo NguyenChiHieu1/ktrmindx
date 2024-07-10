@@ -1,0 +1,36 @@
+.home {
+  text-align: center;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 span {
+  display: inline-block;
+  position: relative;
+}
+.line {
+  width: 100%;
+  height: 1px; /* Độ dày của dòng gạch */
+  background-color: #ccc; /* Màu sắc của dòng gạch */
+  margin: 20px 0; /* Khoảng cách top và bottom của dòng gạch */
+}
+
+h1 span::before {
+  content: "";
+  display: block;
+  width: 51px;
+  height: 45px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: -1;
+}
+
+.pagination {
+  text-align: center;
+}

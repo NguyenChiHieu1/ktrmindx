@@ -1,0 +1,30 @@
+.movie-item {
+  width: calc(25% - 20px); /* Tính toán kích thước của mỗi MovieItem */
+  /* flex: 1 1 25%; */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-item img {
+  max-width: 100%;
+  height: 480px;
+  /* float: left; */
+}
+.movie-details {
+  float: left;
+  margin: 0;
+}
+.movie-details h2 {
+  margin: 0;
+  width: auto;
+  text-align: left;
+}
+.movie-details-time {
+  display: flex;
+  margin: 0;
+}
+
+.movie-details-time > p:first-child {
+  margin-right: 10px;
+}
